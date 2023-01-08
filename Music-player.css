@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(11, 11, 49);
+    font-family: sans-serif;
+    color: white;
+}
+.container{
+    width:85%;
+    margin:0% 8%;
+}
+.content{
+    display: flex;
+    justify-content:space-between;
+}
+.flex-row{
+    display: flex;
+    justify-content:space-around;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-column{
+    display:flex;
+    flex-direction: column;
+
+}
+.dropdown-color,.text{
+    color: grey;
+    font-size:13px;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.align-items{
+    align-items: center;
+}
+/****Header*****/
+
+header{
+    width:85%;
+    height:95px;
+    display: flex;
+    justify-content:space-between;
+    position:fixed;
+    background-color:rgb(11, 11, 49);
+    z-index:3;
+}
+
+.company-brand{
+    margin:20px;
+    display: flex;
+    gap: 20px;
+}
+.company-brand span{
+    color: white;
+    font-size: 30px;
+    font-family:cursive;
+    margin-left:20px;
+}
+.company-logo{
+    height:50px;
+    width: 50px;
+}
+.company-logo img{
+    height:100%;
+    width: 100%;
+    
+    animation: rotate infinite ease-in-out 1s alternate;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+        border-radius:50%;
+    }
+    to{
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
+
+.profile{
+    display: flex;
+    margin-left:20%;
+    margin: 30px;;
+}
+.profile-image{
+    margin-left:30px;
+    height:60px;
+    width:60px;
+    margin-top:-8px;
+}
+.profile-image img{
+    border-radius:50%;
+    height:100%;
+    width:100%;
+}
+.search{
+    color: white;
+}
+.search input{
+    background-color: rgb(15, 15, 77);
+    height: 30px;
+    width:250px;
+    outline:none;
+    border:0px;
+    border-radius: 15px;
+    padding:2px 20px;
+    position: relative;
+    color: white;
+}
+.search i{
+    position: absolute;
+    margin-top: 8px;
+    z-index: 2;
+}
+
+/******Main******/
+
+main{
+    width:70%;
+    margin-top:8%;
+    display: flex;
+    flex-direction: column;
+}
+.slider{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    margin:10px;
+}
+.slider-image{
+    height:250px;
+    width:300px;
+    margin:4px;
+    opacity:.7;
+    transition:.4s ease-in-out;
+}
+.slider-image:hover{
+    transform: scale(1.2);
+    opacity:1;
+    z-index:3;
+    box-shadow:0px 0px 4px 4px rgb(255, 255, 255);
+}
+.slider-image img{
+    height:100%;
+    width:100%;
+    border-radius: 5px;
+}
+
+/********Latest Release********/
+.latest-release{
+    width:100%;
+    margin:10px;
+}
+
+.latest-release-info{
+    margin-top:10px;
+    width:100%;
+}
+.latest-info-box{
+    width:48%;
+}
+.box-image{
+    height:90px;
+    width:90px;
+}
+.box-image img{
+    height:100%;
+    width:100%;
+}
+.flex .flex-column{
+    margin-left:10px;
+}
+
+/***********Popoular Artists***********/
+.Artist{
+    width:100%;
+    margin:10px;
+}
+.artist-name{
+    display:flex;
+    margin-top:12px ;
+}
+.artist-name .flex-column{
+   width:25%;
+   margin:4px;
+}
+.artist-image{
+    height:150px;
+    width:150px;
+    margin-bottom:4px;
+}
+.artist-image img{
+    height:100%;
+    width:100%;
+    border-radius:50%;
+}
+.play{
+    position: relative;
+}
+.play a{
+    font-size:30px;
+    position: absolute;
+    top:40%;
+    color:transparent;
+}
+.play:hover a{
+    color:rgb(255, 255, 255);
+}
+.artist-image img:hover{
+    opacity: 0.8;
+}
+/********party******/
+.party{
+    width:100%;
+    margin:15px 10px;
+}
+.party-image{
+    height:200px;
+    width:100%;
+    transition:.2s ease-in-out;
+    overflow: hidden;
+}
+.party-image img{
+    height: 100%;
+    width: 100%;
+}
+.party-image:hover{
+    transform:scale(1.2);
+}
+.song-type{
+    position:relative;
+    width:32%;
+    overflow:hidden;
+}
+.song-type p{
+    font-size:25px;
+    font-weight:bold;
+    font-family:cursive;
+    position: absolute;
+    height:100%;
+    top:0%;
+    left:30%;
+    display: flex;
+    align-items: center;
+    z-index:3;
+}
+/*****latest-hindi-song********/
+
+.latest-hindi{
+    width:100%;
+    margin:15px 10px;
+}
+.hindi{
+    width:20%;
+    margin:8px;
+}
+.hindi-image{
+    height:100px;
+    width:100px;
+    margin-bottom:5px;
+}
+.hindi-image img{
+    height:100%;
+    width:100%;
+}
+/******aside****/
+.aside{
+    margin-top:9%;
+    display: flex;
+    flex-direction:column;
+    width:28%;
+    margin-left:35px; 
+}
+.queue{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.dropdown{
+    width:20%;
+}
+.aside-list{
+    margin-top:10px;
+    display: flex;
+    flex-direction:column;
+}
+.playlist{
+    height:60px;
+    width:90%;
+    background-color:transparent;
+    margin:2px;
+    display: flex;
+    justify-content:space-between;
+    transition:.5s ease-in-out;
+    border-radius:4px;
+}
+.playlist:hover{
+    outline: 1px solid grey;
+    background-color:rgb(16, 29, 67);
+
+}
+.song-info{
+    width:70%;
+    display: flex;
+    margin-left:4px;
+    gap:8px;
+    align-items: center;
+}
+.song-info-logo{
+    height:50px;
+    width:60px;
+}
+.song-info-logo img{
+    height:100%;
+    width:100%;
+}
+.song-name{
+    display: flex;
+    flex-direction: column;
+}
+.wishlist{
+    width:30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.wishlist i:hover{
+   color: rgb(163, 54, 73);
+}
+
+/******Media-Query*******/
+
+@media (max-width:768px) {
+    .container{
+        width: 85%;
+    }
+    header{
+        width:100%;
+        margin-top:-10px;
+    }
+    .content{
+        display:inline-block;
+    }
+    .slider{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+        width:100%;
+        display: flex;
+        justify-content: unset;
+    }
+    .aside{
+        width:100%;
+        display: flex;
+        flex-direction:column;
+    }
+    .latest-release-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .latest-info-box{
+        width:100%;
+    }
+}

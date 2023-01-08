@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(9, 11, 50);
+    color: white;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content:space-around;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.margin{
+    margin:10px;
+}
+.margin-left{
+    margin-left:40px;
+}
+.margin-right{
+    margin-right:40px;
+}
+.margin-top{
+    margin-top:48px !important;
+}
+/*******************Header*******************/
+ 
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    transition:.5s ease-out;
+     
+}
+ul li a:hover{
+     color: rgb(8, 139, 139);
+}
+input{
+    background-color:rgb(15, 18, 79);
+    color: white;
+    outline:0;
+    width:250px;
+    padding:5px 5px;
+    border-radius: 20px 20px;
+    border: 2px solid rgb(9, 11, 50) ;
+}
+ .text{
+    margin-top:40px;
+    margin-left:20px;
+}
+.text span{
+    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+}
+.header_logo{
+    margin-top:45px;
+    height:50px;
+    width:50px;
+}
+.header_logo img{
+    height: 100%;
+    width: 100%;
+    margin-right:10px;
+    border-radius: 50%;
+}
+
+/*******Content***********/
+
+#container{
+    display:flex;
+    flex-direction:column;
+    width:60%;
+    height:100%;
+    margin-top:5%;
+    margin-left:8%;
+}
+.card{
+    background: linear-gradient( to top,rgb(15, 18, 79), rgb(9, 11, 50));
+    height:350px;
+    width:100%;
+    display: flex;
+}
+.card-image{
+    height:350px;
+    width:35%;
+}
+.card-image img{
+    height:100%;
+    width: 100%;
+}
+.card-body{
+    width:55%;
+    padding: 40px 20px ;
+}
+.card-body p{
+    margin:40px 0px 50px;
+}
+.card-body a{
+    margin-left:50px;
+    text-decoration: none;
+    color: white;
+}
+.card-body button{
+    width: 80px;
+    height:35px;
+    font-weight:600;
+    text-align: center;
+    background-color: rgb(123, 123, 238);
+    color: white;
+    border:0px;
+    border-radius:5px;
+
+}
+.card-body a:hover{
+    font-weight:600;
+    color: white;
+}
+
+.playlist{
+    margin-top:15px;
+}
+ 
+.playlist-box{
+    margin-top:8px;
+    height:60px;
+    background-color:rgb(15, 18, 79) ;
+    display: flex;
+    justify-content:space-between;
+    width:100%; 
+    transition:all 0.5s ease-out;
+}
+.playlist-box:hover{
+    background-color:black;
+}
+.left{
+    display: flex;
+    justify-content:space-around;
+}
+.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.right a{
+    color:white;
+    transition: all ease-in infinite;
+}
+.right a:hover{
+    color:rgb(215, 38, 67);
+}
+.right i{
+    height: 20px;
+    width:40px;
+}
+.playlist span {
+    margin-top:20px;
+    margin-left:5px;
+}
+.playlist-box p{
+    margin-left:20px;
+}
+.playlist-box-image {
+    height:35px;
+    width:35px;
+}
+.playlist-box-image img{
+    height:100%;
+    width:100%;
+    margin:15px 10px;
+    border-radius: 4px;
+}
+.song-name{
+    margin:12px 30px;
+}
+
+/********Footer********/
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    height:80px;
+    background-color:rgb(8, 8, 40);  
+}
+.song-info{
+    display: flex;
+    width:40%;
+}
+.song-info-image{
+    height:55px;
+    width: 55px;
+    margin:10px 20px;
+}
+.song-info-image img{
+    height:100%;
+    width: 100%;
+}
+.artist{
+    margin-top:15px;
+    font-size:16px;
+}
+.artist p{
+    font-size: 11px;
+}
+.music-control{
+    width:40%;
+}
+.music-button{
+    display: flex;
+    align-items: center;
+    margin-left:40px;
+    margin-top:10px;
+    gap: 40px;
+   
+}
+.slider{
+ display: flex;
+ align-items: center;
+}
+.slider input{
+    margin:8px;
+    color:blue;
+}
+.volume-control{
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.volume-control input{
+    width:70px;
+}
+
+/*****Aside*****/
+
+aside{
+    width:25%;
+    position: absolute;
+    top:23%;
+    right:6%;
+}
+.number{
+    margin:20px 5px;
+}
+
+/********Media Query********/
+@media screen and(max-width:576px) {
+    body{
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+    }
+    #container{
+        width:100%;
+    }
+    aside{
+        position: relative;
+        width:100%;
+    }
+}
